@@ -9,7 +9,6 @@ import org.junit.Test;
 
 public class TestValidator 
 {
-	Validator validCheck = new Validator();
 	ArrayList<String> validCheckList = new ArrayList<String>();
 	ArrayList<String> validFailList = new ArrayList<String>();
 	
@@ -23,6 +22,6 @@ public class TestValidator
 	@Test
 	public void testValidator() 
 	{
-		assertEquals(validFailList,validCheck.findFalseRecords(validCheckList));
+		assertEquals(validFailList,Validator.findFalseRecords(validCheckList));
 	}
 }

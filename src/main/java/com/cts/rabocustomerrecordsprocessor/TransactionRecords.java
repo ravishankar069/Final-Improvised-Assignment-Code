@@ -24,7 +24,7 @@ public class TransactionRecords {
 	 * here the interface file reader wired and the qualifier built to choose whether xml or csv file has been taken into action. 
 	 */
 	@Autowired
-	@Qualifier("csvReader")
+	@Qualifier("xmlReader")
 	private FileReader reader;
 
 	public String getReference() {

@@ -8,7 +8,6 @@ import org.junit.Test;
 public class TestValidateData
 {
     String[] record = {"123456abc", "123456xyz"};
-    ValidateData testData = new ValidateData();
     ArrayList<String> dataList = new ArrayList<String>();
     
     @Before
@@ -16,9 +15,9 @@ public class TestValidateData
     dataList.add("123456xyz");
     }
     
-    @Test
+	@Test
 	public void testValidateData() throws Exception
 	{
-	assertEquals(dataList, testData.validateData(record));
+	assertEquals(dataList, ValidateData.validateData(record));
 	}
 }

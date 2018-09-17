@@ -20,7 +20,7 @@ public class ValidateData {
 	 * @return recordList which contains unique customers based on reference number.
 	 * @throws Exception
 	 */
-	public List<String> validateData(String data[]) throws Exception{
+	public static List<String> validateData(String data[]) throws Exception{
 		recordList = new ArrayList<String>();
 		duplicateList = new ArrayList<String>();     
  		dataLength = data.length;

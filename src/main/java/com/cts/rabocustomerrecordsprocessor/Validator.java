@@ -18,7 +18,7 @@ public class Validator {
 	 * validator[] holds the validation passed records.
 	 * validFail list contains the validation failed records.
 	 */
-    public List<String> findFalseRecords(List<String> validCheck){	
+    public static List<String> findFalseRecords(List<String> validCheck){	
      String unique[] = validCheck.toArray(new String[validCheck.size()]);
 		
 	 for(String pass : unique){

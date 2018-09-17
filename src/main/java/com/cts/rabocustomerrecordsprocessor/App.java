@@ -11,10 +11,8 @@ public class App {
 	ApplicationContext context = new AnnotationConfigApplicationContext(FileReaderService.class);	
 	
 	TransactionRecords transRecords = context.getBean(TransactionRecords.class);
-	ValidateData dataValid = new ValidateData();
-	dataValid.validateData(transRecords.recordsReader());
-	Validator validator = new Validator();
-	validator.findFalseRecords(ValidateData.recordList);
+	ValidateData.validateData(transRecords.recordsReader());
+	Validator.findFalseRecords(ValidateData.recordList);
 	InvalidEndBalance.invalidEndBalance(Validator.validFail);
 	Duplicates.duplicates(ValidateData.duplicateList);
 	}
